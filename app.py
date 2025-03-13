@@ -4,7 +4,9 @@ from googletrans import Translator
 from streamlit_lottie import st_lottie
 import json
 
-with open("")
+with open("Animation - 1741877895752.json") as source:
+  animation=json.load(source)
+st.lottie(animation,width = 350)
 
 translator = Translator()
 st.title('Uso de textblob')
